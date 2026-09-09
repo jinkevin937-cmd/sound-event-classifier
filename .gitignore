@@ -1,0 +1,5 @@
+data/
+sound_mlp.pth
+__pycache__/
+*.pyc
+.env
