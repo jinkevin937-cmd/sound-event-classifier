@@ -70,3 +70,4 @@ python predict.py --model sound_mlp.pth --audio data/ESC-50/audio/1-100032-A-0.w
 | ESC-50 真实数据（50 类） | 测试 acc ≈ **20%**（随机是 2%） | MLP 学到东西了，但 50 类复杂环境声对 MLP 太难 |
 
 > 💡 **为什么 MLP 只有 20%**：这正是课件 3.3 节陷阱说的——MLP 把 mel 谱平均成 128 维向量，**丢失了"时间先后"和"频率邻近"结构**。音频分类真正的主力是 CNN（第 11 课前沿会讲 PANNs 等，能在 ESC-50 上到 90%+）。这个项目让你亲手验证"MLP 是起点、不是终点"。
+# Demo PR Test
